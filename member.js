@@ -1,9 +1,11 @@
 function skillsMember()
 {
 	return {
-		restrict:"E"
+		restrict:'E',
+		controller:skillsMemberController,
+	        controllerAs: 'vm',
                scope{
-		member:"m"
+		member:'='
 	       } 
 	};
 }
